@@ -12,6 +12,13 @@ body{
     background: $primary-background-color;
 }
 
+textarea:focus,input:focus,button{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+
 .container{
     width: 350px;
     margin: 50px auto;
