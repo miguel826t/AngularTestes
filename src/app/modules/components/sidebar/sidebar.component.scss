@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  position: absolute;
+  width: 60px;
+  height: 600px;
+  display: flex;
+  justify-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  overflow: hidden;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  padding: 15px 1%;
+  color: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0,05);
+  transition: .6s cubic-bezier(.8,.5,.5,.8);
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+}
+
+.container:hover{
+  width: 150px;
+}
+
+p{
+  font-weight: 300;
+  font-size: 2.0rem;
+  text-shadow: 1px 1px 2px #000;
+
+}
+.container .nav-menu .lista{
+  width: 100%;
+  cursor: pointer;
+  
+}
+.container .nav-menu .lista li{
+  display: flex;
+  gap: 12px;
+  border-radius: 8px;
+  transition: .4s ease-in-out;
+  padding-right: 30px;
+}
+
+.container .nav-menu .lista li .image{
+  width: 30px;
+}
+.container .nav-menu .lista li span{
+  width: 30px;
+  align-self: center;
+  font-size: 15px;
+  min-width: max-content;
+  text-shadow: 1px 1px 2px #000;
+
+}
+.container .nav-menu .lista li:hover{
+  background: rgba(230,235,240,0.2);
+}

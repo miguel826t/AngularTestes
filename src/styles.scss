@@ -9,7 +9,13 @@
 }
 
 body{
-    background: $primary-background-color;
+    background-image: url("../src/assets/imgs/Arvore-Vida.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom left;  
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#9fc0cf,#e5edf1)
 }
 
 textarea:focus,input:focus,button{
