@@ -20,12 +20,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { SidebarComponent } from './modules/components/sidebar/sidebar.component';
+import { UserCardComponent } from './modules/components/user-card/user-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
+    UserCardComponent,
   ],
   imports: [
     BrowserModule,
