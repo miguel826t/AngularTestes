@@ -11,19 +11,38 @@
     align-items: center;
     gap: 100px 50px;
     flex-wrap: wrap;
+    padding: 100px 50px;
+
+    //Alinhar no centro
+
+    transform: translate(0, 50%);
 
     .card{
         position: relative;
-        width: 300px;
+        width: 350px;
         height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
         border-radius: 20px;
         box-shadow: 0 35px 80px rgba(0,0,0,.15);
         background: #fff;
         transition: 0.5s;
 
         &:hover{
-          height: 400px;
+          height: 300px;
         }
+
+        &:hover .conteudo{
+            top: 150px;
+            height: 150px;
+          }
+
+        &:hover .caixaImg{
+            top: -100px;
+            scale: .75;
+            box-shadow: 0 15px 45px rgba(0,0,0,.2);
+          }
 
         .caixaImg{
             position: absolute;
@@ -33,6 +52,7 @@
             border-radius: 12px;
             background: #333;
             overflow: hidden;
+            transition: .5s;
 
             img{
                 position: absolute;
@@ -41,6 +61,43 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+        }
+
+        .conteudo{
+            position: absolute;
+            top: 250px;
+            width: 100%;
+            height: 35px;
+            overflow: hidden;
+            text-align: center;
+            padding: 0 30px;
+            transition: .5s;
+
+            h2{
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 2.5rem;
+            }
+            p{
+                text-align: left;
+                margin-left: 30px;
+            }
+            a{
+                display: inline-block;
+                margin-top: 15px;
+                background: #1ce670;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: 500;
+                border-radius: 8px;
+                transition: .5s;
+
+                &:hover{
+                    background: #040405;
+                    transition: .5s;
+                }
             }
 
         }
