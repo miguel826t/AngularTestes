@@ -21,6 +21,9 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { SidebarComponent } from './modules/components/sidebar/sidebar.component';
 import { UserCardComponent } from './modules/components/user-card/user-card.component';
+import { PacienteListComponent } from './paciente-list/paciente-list.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -28,6 +31,7 @@ import { UserCardComponent } from './modules/components/user-card/user-card.comp
     AppComponent,
     SidebarComponent,
     UserCardComponent,
+    PacienteListComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,9 @@ import { UserCardComponent } from './modules/components/user-card/user-card.comp
     MatInputModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

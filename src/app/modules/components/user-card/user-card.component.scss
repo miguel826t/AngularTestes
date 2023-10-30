@@ -12,9 +12,6 @@
     gap: 100px 50px;
     flex-wrap: wrap;
     padding: 100px 50px;
-
-    //Alinhar no centro
-
     transform: translate(0, 50%);
 
     .card{
@@ -83,9 +80,17 @@
             transition: .5s;
 
             h2{
-                font-size: 1.5rem;
+                font-size: 2.5rem;
                 font-weight: 700;
                 line-height: 2.5rem;
+                //font-size: 36px;
+                text-align: center;
+                color: transparent; /* Texto transparente */
+                -webkit-text-stroke: 1px white; /* Borda branca de 2px */
+                //text-stroke: 2px white; /* Borda branca de 2px */
+                //text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); /* Sombreamento */
+                padding: 10px;
+                margin: 0;
             }
             p{
                 text-align: left;
