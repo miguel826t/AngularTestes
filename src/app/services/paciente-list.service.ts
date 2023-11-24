@@ -8,7 +8,9 @@ export class PacienteListService {
   private list: Array<String> = [
     "Miguel",
     "Rosa",
-    "Pati"
+    "Pati",
+    "Cavalcante",
+    "M de macaco"
   ];
 
 
