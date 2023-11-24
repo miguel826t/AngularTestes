@@ -1,22 +1,6 @@
-<!-- app.component.html 
 
 
-<button class="toggle-button1" (click)="toggleSideBar()">☰</button>
-<div class="sidebar" [ngClass]="{'sidebar-hidden': !isSideBarOpen, 'sidebar-visible': isSideBarOpen}">
-    <div class="sidebar-header">
-      <h2>Menu</h2>
-      <button class="toggle-button2" (click)="toggleSideBar()">☰</button>
-    </div>
-    <ul class="menu">
-      <li><a routerLink="/dashboard">Página Inicial</a></li>
-      <li><a routerLink="/profile">Perfil</a></li>
-      <li><a routerLink="/settings">Configurações</a></li>
-    </ul>
-  </div>
-  <div class="content">
-    <router-outlet></router-outlet>
-  </div>
-  -->
+
   <div class="container">
     <nav class="nav-menu">
         <ul class="lista">
@@ -25,10 +9,15 @@
               <span>Home</span>
           </li>
           <li>
+            
               <img class="image" src="../../../../assets/imgs/Clientes.svg" />          
               <span>Pacientes</span>
           </li>
         </ul>
         
     </nav>
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
   </div>

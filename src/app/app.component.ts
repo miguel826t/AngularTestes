@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
           <app-sidebar></app-sidebar>
-          <app-user-card ></app-user-card>
           `
 })
 export class AppComponent {
