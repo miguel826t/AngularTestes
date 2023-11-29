@@ -1,15 +1,12 @@
-
-
-
+<app-preloader *ngIf="loading"></app-preloader>
   <div class="container">
     <nav class="nav-menu">
         <ul class="lista">
-          <li>
+          <li routerLink="home">
               <img class="image" src="../../../../assets/imgs/Home2.svg" />          
               <span>Home</span>
           </li>
-          <li>
-            
+          <li routerLink="pacientes">
               <img class="image" src="../../../../assets/imgs/Clientes.svg" />          
               <span>Pacientes</span>
           </li>

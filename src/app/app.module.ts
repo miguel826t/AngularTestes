@@ -18,12 +18,13 @@ import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeModule } from './modules/home/home.module';
 import { SidebarComponent } from './modules/components/sidebar/sidebar.component';
 import { UserCardComponent } from './modules/components/user-card/user-card.component';
 import { PacienteListComponent } from './paciente-list/paciente-list.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PreloaderComponent } from './modules/components/preloader/preloader.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -32,11 +33,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidebarComponent,
     UserCardComponent,
     PacienteListComponent,
+    PreloaderComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
     MatFormFieldModule,
     MatPaginatorModule,
     MatSnackBarModule,
@@ -53,6 +55,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatCardModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

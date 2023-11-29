@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TodoListComponent } from './todo-list.component';
+import { PreloaderComponent } from './preloader.component';
 
-describe('TodoListComponent', () => {
-  let component: TodoListComponent;
-  let fixture: ComponentFixture<TodoListComponent>;
+describe('PreloaderComponent', () => {
+  let component: PreloaderComponent;
+  let fixture: ComponentFixture<PreloaderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TodoListComponent]
+      declarations: [PreloaderComponent]
     });
-    fixture = TestBed.createComponent(TodoListComponent);
+    fixture = TestBed.createComponent(PreloaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
